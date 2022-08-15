@@ -1,0 +1,76 @@
+@media (max-width:740px) {
+    #header .search-icon {
+        display: none;
+    }
+    #nav > li {
+        display:block;
+    }
+    #nav {
+       
+        display: block;
+    }
+    li.width-menu {
+        padding-right: 50px;
+    }
+    #header {
+        height: auto;
+    
+    }
+    #nav .subnav.subnav-mobile {
+        margin: -49px 139px;
+    }
+    
+
+    #header .mobile-menu-btn{
+        /* cursor: pointe   r; thay đổi dấu con chuột khi di chuyển vào */
+        cursor: pointer;
+        color: aliceblue;
+        font-size: 20px;
+        /* position: relative; để nổi lên các lớp */
+       position: relative;
+       /* //float: right; để di chuyển biểu tượng sang cuối bên phải// float: right; */
+       float: right;
+       bottom: 252px; 
+       padding: 15px; 
+      
+}
+#header .mobile-menu-btn:hover {
+    background-color: red;
+ }
+
+#header .ti-menu:hover {
+   color: rgba(240, 248, 255, 0.388);
+}
+
+}
+@media (min-width:740px){
+    #header .ti-menu{
+        display: none;
+    }
+}
+/* --------------------content--------------- */
+@media (max-width:1377px){
+    .footer-dark {
+        margin-top: 600px;
+    }
+}
+@media (max-width:989px){
+    .footer-dark {
+        margin-top: 799px;
+    }
+}
+@media (max-width:677px){
+    #content .name-anh {
+        width: 124px;
+    }
+}
+@media (max-width:496px){
+    #content .danhsach-monan {
+        display: none;
+    }
+    .footer-dark {
+        margin-top: 100px;
+    }
+}
+
+   

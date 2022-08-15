@@ -1,0 +1,487 @@
+/* resest css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+    /* 
+1.Từ ngoài vào trong 
+2.Từ trên xuống dưới
+3.Tổng quan đến chi tiết
+ */
+/* 
+1. vị trí
+2.kích thước (width,heigth)
+3. màu sắc 
+4. kiểu dáng(Hình dáng chữ, hình tròn, vuông...)
+ */
+ 
+#main {
+
+}
+#header {
+height: 49px;
+background-color: black;
+/* position: fixed; tạo nổi và cuộn di chuyển theo đầu trang  */
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+/* z-index: 1; tạo độ ưu tiên nổi trên mặt, số càng cao là độ nổi càng cao */
+z-index: 1;
+}
+#slider .header-logo{
+   width: 100px;
+   height: 100px;
+   margin-left: 6%;
+}
+#nav {
+    display:inline-block;
+
+}
+#nav, .subnav {
+    list-style-type: none;
+}
+#nav li:hover .subnav{
+ display: block;
+}
+#nav > li{
+    display: inline-block;
+} 
+#nav li {
+display: inline-block;
+position: relative;
+    
+    /* position: relative; */
+
+    
+}
+#nav .subnav a{
+    color: rgb(8, 8, 8);
+    padding: 0 12px;
+    line-height: 50px;
+    font-weight: 500;
+}
+#nav > li > a {
+    color: rgb(220, 224, 228,023);
+    /* text-transform: uppercase; viết hoa hết  */
+    text-transform: uppercase;
+    
+}
+#nav li a {
+ 
+    text-decoration: none;
+    line-height: 49px;
+    padding: 0 24px;  
+}
+#nav > li:hover > a{
+    color:rgb(23, 22, 22);
+background: rgb(216, 207, 207);
+display: block;
+}
+#nav .subnav   {
+    display: none;
+    position: absolute;
+    background-color: aliceblue; 
+    /* box-shadow: tạo bóng */
+    box-shadow:0 0 20px rgb(26, 25, 25);
+    width: 150px;  
+}
+#nav .subnav li:hover {
+    color:rgb(21, 19, 19);
+    background:rgba(82, 79, 79, 0.5);
+   display: block;
+   width: 100%;
+   /* inline-size: 100%; tăng chiều rộng */
+  inline-size: 100%;
+}
+#nav .nav-arrow-down{
+    font-size: 16px;
+    display: ;
+}
+#header .search-doan-dau {
+ 
+}
+#header .search-icon:hover {
+    background-color: red;
+}
+#header .search-icon{
+    /* cursor: pointe   r; thay đổi dấu con chuột khi di chuyển vào */
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 20px;
+    /* position: relative; để nổi lên các lớp */
+   position: relative;
+   /* //float: right; để di chuyển biểu tượng sang cuối bên phải// float: right; */
+   float: right;
+   bottom: 49px;  
+   padding: 15px; 
+ 
+}
+#slider{
+ /* margin-top: 49px;
+ height: 2000px;
+ background-color: #ccc; */
+ position: relative;
+ margin-top: 49px;
+ padding-top: 50%;
+background: url('/assets/css/img/doan1.jpg')  top center /cover no-repeat ;  
+}
+#slider .text-content{
+position: absolute;
+bottom: 48px;
+color: #fff;
+left:  50%;
+/* transform: translateX(-50%); cho font nằm giữa, trục x là trục ngang */
+transform: translateX(-50%);
+/* text-align: center; tạo chữ hàm chỗ hàm text-heading nằm giữa */
+text-align: center;
+}
+#slider .text-heading{
+    /* font-weight: 500; tạon hoặc giảm độ dày của chữ */
+    font-weight: 500;
+    font-size: 24px;
+}
+#content{
+   
+    padding-top: 30px;
+    position: absolute ;
+    height: 760px;
+    width: 100%;
+}
+#slider .text-description{
+    /* margin-top: 25px;tạo khoản cách ở giữa */
+margin-top: 10px;
+font-size: 15px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+ font-style: italic;
+
+}
+#content .tieude-content{
+    text-align: center;
+    font-size: 30px;
+    padding-top:40px;
+}
+#content .text-gioithieu-innghien{
+    text-align: center;
+   padding-top:10px;
+   /* font-style: italic; tạo phong cách chữ nghiên */
+   font-style: italic;
+   /* opacity: ; tạo độ mờ */
+   opacity:0.6 ;
+}
+#content .text-tongnoidungcontent{
+    /* width: 500px; */
+    margin-top: 50px;
+margin-left:100px;
+margin-right: 100px;
+}
+#content .noidung-content{
+    padding: 20px;
+    /* text-align: justify; căn đều chữ */
+    text-align: justify;
+    /* line-height: 1.6; tạo độ dản khoảng cách của font */
+    line-height: 1.6;
+}
+#content .danhsach-monan{
+    float: left;
+    margin-left: 8%;
+
+}
+#content .textname-monan{
+    text-align:center;
+    padding-top: 20px;
+    font-size: 15px;
+    /* font-weight:  700; tạo độ dày */
+    font-weight:  700;
+     /* line-height: 1.6; tạo độ khoảng cách */
+     line-height: 1.6;
+    
+}
+#content .name-anh{
+    margin-top: 15px;
+    width: 200px;
+    /* border-radius: 4px; bo gốc ảnh lại */
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgb(44, 39, 39); 
+   
+}
+#content .tour-section{
+    background: color #000;
+    width: 100%;
+    height: 700px;
+    
+}
+#phangiua .content-phangiua{
+  
+}
+
+/*-------------PHẦN SỐ LƯỢNG ĐƠN CÒN----------*/
+/* #content .tieude-soluongdon{
+    margin-top: 500px;
+    margin-top: 500px;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 24px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#content .tieude-soluongdon{
+    font-weight: 100;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+  #content .soluong-con-sanpham{
+      font-size: 30px;
+    color:rgb(230, 22, 22);
+background-color: #fff;
+    */
+
+/*----------- PHẦN CHÂN TRANG -------*/
+.footer-dark {
+
+    color: #f0f9ff;
+    background-color: #000;
+    /* margin-top: 400px; */
+  }
+  .footer-dark .item.social {
+    text-align: center;
+  }
+  
+  @media (max-width:991px) {
+    .footer-dark .item.social {
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  .footer-dark .item.social > a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75;
+  }
+  
+  .footer-dark .item.social > a:hover {
+    opacity: 0.9;
+  }
+  
+  .footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0;
+  }
+  .logo-footer{
+      width: 80px;
+      height: 80px;
+      margin-left: 48%;
+      background-size: 200px;
+  }
+  /* ---------------douong----------- */
+  .bmug{
+      padding-top: 60px;
+      font-size: 30px;
+      text-align: center;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  #content-douong .nentrangdep{ 
+  width: 100%;
+  height: 1000px;
+
+     
+  }
+  #content-douong .home-sanpham-douong{
+      color: rgb(16, 16, 16);
+      /* padding-left: 50%; */
+     font-weight: 700;
+     margin-left: 5%;
+
+  }
+
+ #content-douong .tieude-douong{
+     padding-top: 10px;
+     
+ } 
+ #content-douong .nen-con{
+     background-color: rgba(139, 143, 143, 0.25);
+     height: 1000px;
+    margin: 50px 100px 100px;
+    
+     box-shadow:0 0 20px rgb(58, 57, 57);
+ }
+ #content-douong .danhsach-monan{
+     float: left;
+     margin-left: 8%;
+    width: 100px;
+    /* line-height: 1.6; tạo khoảng cách trên dưới cho font  */
+    line-height: 1.6; 
+
+    
+     
+ }
+#content-douong .nameanh-douong{
+    margin-top: 15px;
+    width: 200px;
+    /* border-radius: 4px; bo gốc ảnh lại */
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgb(44, 39, 39); 
+    /* ---------------------- */
+    
+ }
+ main {
+    color: #000;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #fff;
+    background-repeat: no-repeat;
+  
+}
+
+.block {
+    position: relative;
+    /* width: 22%; */
+    /* background-color: lightgrey; */
+    padding-top: 10px;
+    margin-bottom: 165px;
+   
+}
+
+.image {
+    width: 230px;
+    height: 280px;
+    border-radius: 4px;
+    box-shadow: 0 0 20px rgb(155, 16, 16); 
+   
+}
+
+.info {
+    position: absolute;
+    width:230px;
+    top: 280px;
+ 
+    background-color: rgb(221, 213, 213);
+
+   
+}
+
+.cart {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 6px 50px 6px;
+    width: 48%;
+    margin-right: 2%;
+    border: 2px solid #00796B;
+    cursor: pointer;
+    float: left;
+   
+
+  
+}
+
+.cart:hover {
+    background-color: #00796B;
+}
+
+.order {
+    color: #26A69A;
+    padding: 6px 50px 6px;
+    width: 48%;
+    margin-left: 2%;
+    border: 2px solid #26A69A;
+    cursor: pointer;
+    float: left;
+   
+}
+
+.order:hover {
+    color: #fff;
+    background-color: #00796B;
+}
+
+.sm-font {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+/* 0----------------- */
+#content-ncan{
+ margin-top: 430px;
+
+ height: 1000px;
+ width: 100%;
+
+}
+#content-ncan .fontsize{
+    fon
+}
+#content-ncan .tieude-dnman{
+color: #00796B;
+margin-left: 10%;
+    
+}
+#content-ncan .font-content{
+    margin-top: 20px;
+    margin-left: 15%;
+    width: 50%;
+    line-height:1.6 ;
+    
+}
+#content-ncan
+ .anh-content{
+    width: 45%;
+    height: 457px;
+    position: relative;
+    left: 109%;
+    /* z-index: 2; */
+    top: -477px;
+    box-shadow:0 0 20px rgb(26, 25, 25,0.4);
+    border-radius: 4px;
+}
+
+#content-ncan .content-video{
+   margin-bottom: 100px;
+   position: absolute;
+
+}
+#content-video .noidung{
+
+}
+@media screen and (max-width: 992px) {
+    .block {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .block {
+        width: 100%;
+    }
+}
+
+.container-fluid{
+    float: left;
+    margin-left: 5%;
+    margin-top: 5px;
+    
+}
+.mb-0{
+    text-align: center;
+}
